@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <title>SÜRLI · forside</title>
+
     <!-- Bootstrap CSS -->
-<<<<<<< HEAD
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/custom.css">
-=======
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
->>>>>>> cc25ac21c1c8a4de22c6fa5fa3ca0ea498aa8fc6
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="css/custom.css?v=1.0.2" />
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-bg">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand animate__tada" href="index.html"><img src="img/logo.png"></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -38,35 +35,174 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Hjem</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="produkter.html">Produkter</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link davi-btn-primary rounded" href="#">Pricing</a>
+              <a class="nav-link davi-btn-primary rounded" href="#">Om Sürli</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <h1>Hello, world!</h1>
-    <h2>Sara og Silje er de sejeste i verden</h2>
-    <h3>lorem ipsuuuuum</h3>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <header class="splash-hero py-5 d-flex align-items-center">
+      <div class="container">
+        <div class="justify-content-md-center row">
+          <!-- <div class="col-md-6 text-md-center text-light">
+            <h1>Sürli</h1>
+            <p>
+              En syrlig eventyrlig oplevelse
+            </p>
+          </div> -->
+        </div>
+      </div>
+    </header>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <section class="ball-4 container">
+      <div class="row py-5 d-flex">
+        <div class="col-md-4 p-5">
+          <img src="img/hero_produkt2.png"> 
+        </div>
+        <div class="col-md-4 p-5">
+           <img src="img/hero_produkt1.png">
+        </div>
+        <div class="col-md-3 offset-md-1 d-flex flex-column justify-content-md-center">
+          <h1>En ballanceret mave, er en glad mave</h1>
+           <p>Med SÜRLI's produkter behøver du hverken at gå på kompromis med smagen eller dit velvære! Din mave får de mavesyrebakterier den behøver, til en behagelig og ballanceret fornemmelse hele dagen!
+           </p>
+           <img src="img/strawberry_blackberry.png" alt="" class="w-50">
+        </div>
+      </div>
+    </section>
+
+    <section class="milk">
+     
+      <div class="container d-flex m-5 justify-content-end">
+        <div class="col-md-7 d-flex flex-column justify-content-md-center row">
+          <h1>Kan du holde snitterne væk?</h1>
+          <p>Prøv vores lækre syrlige snitte på koldskål med citron og honning</p>
+        <div class="d-flex m-5">
+          <a href="produkter.html" class="button">SE PRODUKTER</a>
+        </div>
+        </div>
+      <div class="ball-3 col-md-5">
+        <img src="img/snitte_hero.png" alt="">
+      </div>
+    </div>
+    </section>
+
+
+<section class="container">
+  <div class="m-5">
+  <h1>Vidste du at...</h1>
+    <p>Sürli’s produkter hverken indeholder laktose eller gluten, <br>men er
+  derimod proppet med de mælkesyrebakterier din mave har brug for,<br>
+  har et højt indhold af både vitaminer og calcium,<br> og så bruger vi kun
+  naturliglige sødemidler som honning, kokossukker og vanilje.</p>
+</div>
+</section>
+
+<section class="container p-5">
+  <div class="d-flex">
+   <img src="img/info_asset_lactose.png" alt="">
+    <img src="img/info_asset_gluten.png" alt="">
+    <img src="img/info_asset_sugar.png" alt="">
+  </div>
+  <div class="d-flex">
+    <img src="img/info_asset_honey.png" alt="">
+    <img src="img/info_asset_vitamin_c.png" alt="">
+    <img src="img/info_asset_calcium.png" alt=""> 
+  </div>
+</section>
+
+    <section>
+      <div class="contest py-5 d-flex align-items-center">
+        <div class="container">
+          <div class="justify-content-md-center row col-sm-12">
+            <div class="ball-2 col-md-6 text-md-center text-light">
+              <h1>Find de to forsvundne bær i regnskoven og vind et års forbrug af Sürlis produkter!</h1>
+              <a href="#0" class="button">DELTAG I KONKURRENCEN</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="produkt2 container">
+      <div class="row py-5">
+        <div class="col-md-4 offset-1 py-5">
+          <h1>Vær kreativ med Sürli</h1>
+          <p>Sürli elsker kreative sjæle - store som små! 
+            <br> Især projekter der kan samle hele familien! <br>
+            Hop ind og se de sjove projekter på vores Facebook-side
+          </p>
+          <a href="https://www.facebook.com/permalink.php?story_fbid=111118821052299&id=109958864501628" class="button">BESØG FACEBOOK</a>
+      </div>
+      <div class="col-md-6">
+      <img src="img/plantekasser.png"> 
+      </div>
+      <div>
+      </div>
+      </div>
+  </section>
+
+  <section class="d-flex flex-column justify-content-center py-5">
+    <h1>SÜRLI ER OGSÅ PÅ INSTAGRAM</h1>
+  </section>
+
+  <section class="container p-5">
+    <div class="d-flex">
+      <div class="igpost1 col-md-3 p-2">
+     <a href="index.html"><img src="img/instagram_post1.png" alt=""></a>
+    </div>
+    <div class="igpost2 col-md-3 p-2">
+     <a href="index.html"><img src="img/instagram_post4.png" alt=""></a>
+    </div>
+    <div class="igpost3 col-md-3 p-2">
+     <a href="index.html"><img src="img/instagram_post3.png" alt=""></a>
+    </div>
+    <div class="igpost4 col-md-3 p-2">
+     <a href="index.html"><img src="img/instagram_post2.png" alt=""></a>
+    </div>
+    </div>
+
+  </section>
+
+
+<footer>
+<div class="container">
+<div class="d-flex row">
+  <div class="col-md-4 pt-5">
+  <a class="footer-logo" href="#"><img src="img/logo-light.png"></a>
+  <p>Sürli Produkter a/s <br> CVR: 999999 <br>Sürlivej 90, 9999 Sürlirup <br> tlf +45 90909090 <br> <a href="mailto: surliprodukt@gmail.com">Email surliprodukt@gmail.com</a></p>
+</div>
+<div class="col-md-4 pt-5">
+  <h1>Tilmeld dig vores nyhedsbrev</h1>
+    <p>Få spændende nyheder om vores syrlige smagsunivers og spændende events og konkurrencer</p>
+    <a href="#0" class="button">TILMELD</a>
+  </div>
+<div class="col-md-3 py-5 d-flex offset-md-1">
+  <div class="some d-flex">
+<a class="facebook" href="https://www.facebook.com/SÜRLI-109958864501628"><img src="img/some-facebook.png"></a>
+<a class="instagram" href="https://www.instagram.com/surliprodukter/"><img src="img/some-instagram.png"></a>
+<a class="linkedin" href="#"><img src="img/some-linkedin.png"></a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    -->
+    <script src="gsap.min.js"></script>
+    <script src="ScrollTrigger.min.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>

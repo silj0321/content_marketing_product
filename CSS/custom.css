@@ -1,3 +1,225 @@
-html{
-    background-color: aliceblue;;
+/* GENERELLE SETTINGS */
+
+:root{
+    --primary:#9AD3B2;
+    --secondary: #EAEA59;
+    --thirdly: #886EB8;
+    --fouthly: #D5EDDF;
+    --primary-font: youAreAToy, sans-serif;
+    --secondary-font: Lato, serif;
 }
+
+html{
+    background-color: var(--fouthly);
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--fouthly);
+}
+
+img {
+    width: 100%;
+}
+
+
+
+/* FONTE */
+@font-face {
+    font-family: "youAreAToy";
+    src: url("fonts/you-are-a-toy-font/YouAreAToy-8KKn.ttf");
+  }
+  
+  @font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato/Lato-Thin.ttf");
+  }
+
+/* FONTE SETTINGS */
+h1{
+    font-family: var(--primary-font);
+    color: var(--thirdly);
+    margin: 0 auto;
+}
+
+p{
+  font-family: var(--secondary-font);
+  margin: 0 auto;
+}
+
+/* NAV-BAR SETTINGS */
+.navbar-bg{
+    background-color: var(--primary);
+}
+
+.navbar-brand img{
+    width: 40%;
+}
+
+.navbar-brand img:hover{
+    scale: 1.1;
+    transform: rotate(-5deg);
+}
+
+/* navbar links */
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link.active{
+    color: var(--thirdly);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active:hover{
+    color: var(--fouthly);
+}
+
+/* KNAPPER SETTINGS */
+.button {
+    padding: 1rem;
+    border-radius: 4px;
+    background: var(--thirdly);
+    text-align: center;
+    text-decoration: none;
+    font: bold 1.25em/1 var(--primary-font);
+    letter-spacing: 2px;
+    color: var(--fouthly);
+    text-transform: uppercase;
+    text-shadow: 0px -1px 0px #0374a0;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin: 0 1rem 1rem 0;
+  }
+/*   
+  .secondary-button {
+    background: var(--color-5);
+  } */
+  
+  .button:focus,
+  .button:active,
+  .button:focus-within {
+    outline: 0;
+    border-radius: 4px;
+  }
+  
+  .button:hover {
+    color: var(--thirdly);
+    background-color: var(--primary);
+    transform: scale(1.5);
+  }
+  
+  .button:active {
+    background-color: var(--primary);
+  }
+
+  /* KNAP FOOTER */
+
+  footer .button {
+    color: var(--thirdly);
+    background: var(--primary);
+  }
+
+  footer .button:hover {
+    color: var(--thirdly);
+    background-color: var(--fouthly);
+  }
+  
+  footer .button:active {
+    background-color: var(--fouthly);
+  }
+/* 
+  .ball-3{
+    display: inline-block;
+  } */
+
+/* SPLASH section */
+.splash-hero {
+    background-image: url(../img/splash_2.png);
+    background-color: var(--primary);
+    background-size: cover;
+    background-blend-mode: normal;
+    background-position: 50% 50%;
+    height: calc(100vh - 56px);
+    clip-path: polygon(0 92%, 8% 98%, 17% 100%, 28% 98%, 40% 96%, 54% 97%, 66% 99%, 80% 99%, 93% 96%, 100% 90%, 100% 0, 0 0);
+
+  }
+
+  /* PRODUKT section */
+  .produkt2 p{
+    margin-bottom: 4rem;
+  }
+
+  /* MILK section i midten */
+  .milk{
+      background-image: url(../img/milk_splash3.png);
+      background-size: cover;
+      background-blend-mode: normal;
+      background-position: 50% 50%;
+      height: 100vh;
+  }
+
+  /* KONKURRENCE section */
+  .contest {
+    background-image: url(../img/konkurrence_surli.png);
+    background-color: var(--fouthly);
+    background-size: cover;
+    background-blend-mode: normal;
+    background-position: 100% 50%;
+    height: calc(100vh - 50px);
+  }
+
+  .contest h1{
+      margin-bottom: 2em;
+  }
+
+  /* SOME section */
+
+  .igpost1:hover,
+  .igpost2:hover,
+  .igpost3:hover,
+  .igpost4:hover{
+    transform: scale(1.08);
+}
+
+  /* FOOTER SETTINGS */
+
+  footer{
+      background-color: var(--thirdly);  
+  }
+
+  .footer-logo img{
+      width: 30%;
+  }
+
+  footer h1{
+      color: var(--primary);
+  }
+
+  footer p{
+      color: var(--fouthly);
+  }
+
+  footer a{
+      color: var(--fouthly);
+      text-decoration: none;
+  }
+
+  footer a:hover{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+footer p{
+    margin-bottom: 3rem;
+}
+
+  /* .some{
+      width: 50%;
+  } */
+
+  /* EKSTRA */
+  .click-path{
+  clip-path: polygon(0% 20%, 4% 16%, 11% 12%, 18% 9%, 27% 10%, 34% 9%, 42% 6%, 52% 2%, 61% 3%, 69% 5%, 76% 12%, 83% 12%, 90% 16%, 95% 19%, 96% 27%, 93% 38%, 94% 44%, 97% 53%, 98% 61%, 97% 71%, 93% 79%, 87% 85%, 85% 93%, 83% 98%, 75% 98%, 63% 96%, 53% 98%, 42% 98%, 32% 94%, 22% 94%, 14% 97%, 6% 97%, 3% 85%, 0% 69%, 1% 46%);
+  }
+
+  .wrapper{
+      display: flex;
+  }
