@@ -1,5 +1,10 @@
 /* GENERELLE SETTINGS */
 
+*{
+  max-width: 100%;
+  /* overflow-x: hidden; */
+}
+
 :root{
     --primary:#9AD3B2;
     --secondary: #EAEA59;
@@ -22,8 +27,6 @@ img {
     width: 100%;
 }
 
-
-
 /* FONTE */
 @font-face {
     font-family: "youAreAToy";
@@ -38,6 +41,12 @@ img {
 /* FONTE SETTINGS */
 h1{
     font-family: var(--primary-font);
+    color: var(--thirdly);
+    margin: 0 auto;
+}
+
+h2{
+  font-family: var(--primary-font);
     color: var(--thirdly);
     margin: 0 auto;
 }
@@ -131,7 +140,7 @@ p{
   } */
 
 /* SPLASH section */
-.splash-hero {
+/* .splash-hero {
     background-image: url(../img/splash_2.png);
     background-color: var(--primary);
     background-size: cover;
@@ -140,7 +149,54 @@ p{
     height: calc(100vh - 56px);
     clip-path: polygon(0 92%, 8% 98%, 17% 100%, 28% 98%, 40% 96%, 54% 97%, 66% 99%, 80% 99%, 93% 96%, 100% 90%, 100% 0, 0 0);
 
+  } */
+
+  /* VIDEO forside */
+
+  .videosplash{
+    width: 100%;
+    clip-path: polygon(0 92%, 8% 98%, 17% 100%, 28% 98%, 40% 96%, 54% 97%, 66% 99%, 80% 99%, 93% 96%, 100% 90%, 100% 0, 0 0);
   }
+
+  .overlay{
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
+    height: 950px;
+    background-color: rgba(180, 175, 162, 0.5);
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .splashtext {
+      top: 50%;
+    left: 8%;
+    position: absolute;
+    font-size: 2rem;
+    }
+    .splashtext h1{
+      font-size: 7rem;
+    }
+    .splashtext h2{
+      font-size: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .splashtext {
+    display: none;
+    }
+  }
+
+/* 
+  .splashtext{
+    top: 50%;
+    left: 8%;
+    position: absolute;
+    font-size: 2rem;
+  }
+  .splashtext h1{
+    font-size: 4rem;
+  } */
 
   /* PRODUKT section */
   .produkt2 p{
@@ -168,6 +224,11 @@ p{
 
   .contest h1{
       margin-bottom: 2em;
+  }
+
+  /* INFOGRAFIK section */
+  .info img{
+    width: 40%;
   }
 
   /* SOME section */
@@ -210,16 +271,3 @@ p{
 footer p{
     margin-bottom: 3rem;
 }
-
-  /* .some{
-      width: 50%;
-  } */
-
-  /* EKSTRA */
-  .click-path{
-  clip-path: polygon(0% 20%, 4% 16%, 11% 12%, 18% 9%, 27% 10%, 34% 9%, 42% 6%, 52% 2%, 61% 3%, 69% 5%, 76% 12%, 83% 12%, 90% 16%, 95% 19%, 96% 27%, 93% 38%, 94% 44%, 97% 53%, 98% 61%, 97% 71%, 93% 79%, 87% 85%, 85% 93%, 83% 98%, 75% 98%, 63% 96%, 53% 98%, 42% 98%, 32% 94%, 22% 94%, 14% 97%, 6% 97%, 3% 85%, 0% 69%, 1% 46%);
-  }
-
-  .wrapper{
-      display: flex;
-  }

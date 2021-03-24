@@ -86,7 +86,7 @@ gsap.from(".ball-3", {
     ease: "none",
     scrollTrigger: {
       trigger: ".ball-3",
-      start: "top 90%",
+      start: "top 80%",
       end: "bottom center",
       scrub: true,
     //   markers: true,

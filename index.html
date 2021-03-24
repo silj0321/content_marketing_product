@@ -48,25 +48,35 @@
       </div>
     </nav>
 
-    <header class="splash-hero py-5 d-flex align-items-center">
+    <!-- SPLASH BILLEDE -->
+    <!-- <header class="splash-hero py-5 d-flex align-items-center">
       <div class="container">
         <div class="justify-content-md-center row">
-          <!-- <div class="col-md-6 text-md-center text-light">
-            <h1>Sürli</h1>
-            <p>
-              En syrlig eventyrlig oplevelse
-            </p>
-          </div> -->
         </div>
       </div>
+    </header> -->
+
+    <header class="videosplash">
+      <div class="overlay"></div>
+      <video autoplay loop>
+        <source src="img/surli_splash_animation.mp4" type="video/mp4">
+        </video>
     </header>
+
+    <!-- SPLASH TEKST -->
+      <div class="splashtext col-md-6 text-md-center text-light">
+            <h1>Sürli</h1>
+            <h2>
+              En syrlig eventyrlig oplevelse
+            </h2>
+          </div>
 
     <section class="ball-4 container">
       <div class="row py-5 d-flex">
-        <div class="col-md-4 p-5">
+        <div class="col-6 col-md-4">
           <img src="img/hero_produkt2.png"> 
         </div>
-        <div class="col-md-4 p-5">
+        <div class="col-6 col-md-4">
            <img src="img/hero_produkt1.png">
         </div>
         <div class="col-md-3 offset-md-1 d-flex flex-column justify-content-md-center">
@@ -80,11 +90,11 @@
 
     <section class="milk">
      
-      <div class="container d-flex m-5 justify-content-end">
-        <div class="col-md-7 d-flex flex-column justify-content-md-center row">
+      <div class="container d-flex justify-content-end">
+        <div class="col-md-7 d-flex flex-column justify-content-md-center row col-6">
           <h1>Kan du holde snitterne væk?</h1>
           <p>Prøv vores lækre syrlige snitte på koldskål med citron og honning</p>
-        <div class="d-flex m-5">
+        <div class="d-flex py-4">
           <a href="produkter.html" class="button">SE PRODUKTER</a>
         </div>
         </div>
@@ -96,7 +106,7 @@
 
 
 <section class="container">
-  <div class="m-5">
+  <div class="p-4">
   <h1>Vidste du at...</h1>
     <p>Sürli’s produkter hverken indeholder laktose eller gluten, <br>men er
   derimod proppet med de mælkesyrebakterier din mave har brug for,<br>
@@ -105,7 +115,7 @@
 </div>
 </section>
 
-<section class="container p-5">
+<section class="info container">
   <div class="d-flex">
    <img src="img/info_asset_lactose.png" alt="">
     <img src="img/info_asset_gluten.png" alt="">
