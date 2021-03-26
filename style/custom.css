@@ -225,7 +225,7 @@ p{
 
   /* KONKURRENCE section */
   .contest {
-    background-image: url(../img/konkurrence_surli.png);
+    background-image: url(../img/konkurrence.svg);
     background-color: var(--fouthly);
     background-size: cover;
     background-blend-mode: normal;
