@@ -162,7 +162,7 @@ p{
     position: absolute;
     z-index: 100;
     width: 100vw;
-    height: 950px;
+    height: 120vh;
     background-color: rgba(180, 175, 162, 0.5);
   }
 
