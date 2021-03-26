@@ -5,11 +5,18 @@
   /* overflow-x: hidden; */
 }
 
+@media only screen and (max-width: 600px) {
+  * {
+  overflow-x: hidden;
+  }
+}
+
 :root{
     --primary:#9AD3B2;
     --secondary: #EAEA59;
     --thirdly: #886EB8;
     --fouthly: #D5EDDF;
+    --fithly: #F39232;
     --primary-font: youAreAToy, sans-serif;
     --secondary-font: Lato, serif;
 }
@@ -35,7 +42,7 @@ img {
   
   @font-face {
     font-family: "Lato";
-    src: url("fonts/Lato/Lato-Thin.ttf");
+    src: url("fonts/Lato/Lato-Regular.ttf");
   }
 
 /* FONTE SETTINGS */
@@ -54,6 +61,7 @@ h2{
 p{
   font-family: var(--secondary-font);
   margin: 0 auto;
+  color: var(--thirdly);
 }
 
 /* NAV-BAR SETTINGS */
@@ -85,18 +93,20 @@ p{
 .button {
     padding: 1rem;
     border-radius: 4px;
-    background: var(--thirdly);
+    background: var(--fithly);
     text-align: center;
     text-decoration: none;
     font: bold 1.25em/1 var(--primary-font);
     letter-spacing: 2px;
-    color: var(--fouthly);
+    color: white;
     text-transform: uppercase;
     text-shadow: 0px -1px 0px #0374a0;
     transition: all 0.2s ease;
     cursor: pointer;
     margin: 0 1rem 1rem 0;
   }
+
+
 /*   
   .secondary-button {
     background: var(--color-5);
@@ -110,13 +120,13 @@ p{
   }
   
   .button:hover {
-    color: var(--thirdly);
-    background-color: var(--primary);
-    transform: scale(1.5);
+    color: var(--primary);
+    background-color: var(--thirdly);
   }
   
   .button:active {
     background-color: var(--primary);
+    color: var(--primary);
   }
 
   /* KNAP FOOTER */
@@ -163,18 +173,19 @@ p{
     z-index: 100;
     width: 100vw;
     height: 120vh;
-    background-color: rgba(180, 175, 162, 0.5);
+    background-color: rgba(180, 175, 162, 0.3);
   }
 
   @media only screen and (min-width: 1000px) {
     .splashtext {
-      top: 50%;
+      top: 30%;
     left: 8%;
     position: absolute;
     font-size: 2rem;
     }
     .splashtext h1{
-      font-size: 7rem;
+      font-size: 8rem;
+      color: #503f70;
     }
     .splashtext h2{
       font-size: 3rem;
@@ -228,7 +239,9 @@ p{
 
   /* INFOGRAFIK section */
   .info img{
-    width: 40%;
+    width: 100%;
+    height: 350px;
+
   }
 
   /* SOME section */
@@ -238,12 +251,14 @@ p{
   .igpost3:hover,
   .igpost4:hover{
     transform: scale(1.08);
+    transition: ease-in-out 0.5s;
+
 }
 
   /* FOOTER SETTINGS */
 
   footer{
-      background-color: var(--thirdly);  
+      background-color: #503f70;  
   }
 
   .footer-logo img{
